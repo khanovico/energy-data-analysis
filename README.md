@@ -1,6 +1,6 @@
 # About
 -------------
-I originally started this project a while back with a goal of taking the 2016 NYC Benchmarking Law data about building energy usage and do something interesting with it. After a few iterations I thought it might be interesting to see if I could predict the emission of green house gases from buildings by looking at their age, and water consumption as well as other energy consumption metrics. In the end the point of this project was to build and deploy a model on the cloud using a real world dataset with outliers and missing values using state of the art tools such as,
+The point of this project is to build and deploy a model on the cloud using a real world dataset with outliers and missing values using state of the art tools such as,
 
 * [Seaborn](http://seaborn.pydata.org/)
 * [Scikit-Learn](https://scikit-learn.org)
@@ -45,7 +45,7 @@ You can install the dependencies and access the first two notebook (`GreenBuildi
 
 Followed by running the command container:
 
-	docker run -ip 8888:8888 -v `pwd`:/home/jovyan -t greenbuildings
+	docker run -ip 8888:8888 -v `pwd`:/home/khanovic -t greenbuildings
 
 See <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html">here</a> for more info.  Otherwise without Docker, make sure to use Python 3.7 and install <a href="http://geopandas.org/">GeoPandas</a> (0.3.0) using <a href="https://conda.io/en/latest/">Conda</a> as well as the additional libraries listed in <code>requirements.txt</code>.  These can be installed with the command,
 
@@ -58,6 +58,4 @@ The last notebook (`GreenBuildings3`) I ran locally on my machine with the depen
 ------------------
 
 The NYC Benchmarking Law requires owners of large buildings to annually measure their energy and water consumption in a process called benchmarking. The law standardizes this process by requiring building owners to enter their annual energy and water use in the U.S. Environmental Protection Agency's (EPA) online tool, ENERGY STAR Portfolio Manager® and use the tool to submit data to the City. This data gives building owners about a building's energy and water consumption compared to similar buildings, and tracks progress year over year to help in energy efficiency planning.
-
-I used the 2016 Benchmarking data which is disclosed publicly and can be found <a href="http://www.nyc.gov/html/gbee/html/plan/ll84_scores.shtml">here</a>.  
 

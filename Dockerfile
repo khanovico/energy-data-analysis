@@ -1,4 +1,4 @@
-# Copyright (c) Mike Harmon.
+# Copyright (c) Khanovic.
 # Distributed under the terms of the Modified BSD License.
 
 FROM jupyter/base-notebook:python-3.7.6
